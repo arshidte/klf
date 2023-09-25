@@ -1,0 +1,168 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--link-color);
+  font-weight: normal;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: var(--primary-color);
+  outline: none;
+  text-decoration: none;
+}
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@font-face {
+  font-family: Nexa-bold;
+  src: url(../fonts/Nexa\ Bold.otf);
+}
+@font-face {
+  font-family: Nexa-light;
+  src: url(../fonts/Nexa\ Light.otf);
+}
+@font-face {
+  font-family: NexaRustSans;
+  src: url(../fonts/NexaRustSans-Trial-Black2.ttf);
+}
+@font-face {
+  font-family: NexaRustSans-blackShadow;
+  src: url(../fonts/NexaRustSans-Trial-BlackShadow1.ttf);
+}
+@font-face {
+  font-family: NexaRustSans-Shadow;
+  src: url(../fonts/NexaRustSans-Trial-Shadow.ttf);
+}
+@font-face {
+  font-family: NexaRustScriptB;
+  src: url(../fonts/NexaRustScriptB-Trial-3.ttf);
+}
+@font-face {
+  font-family: NexaRustScriptB-shadow;
+  src: url(../fonts/NexaRustScriptB-Trial-Shadow.ttf);
+}
+@font-face {
+  font-family: NexaRustScriptB-4;
+  src: url(../fonts/NexaRustScriptR-Trial-4.ttf);
+}
+
+.header-main-div {
+  background-color: #dfffb1;
+  color: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+}
+.logo-img {
+  width: 130px;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  font-family: Nexa-bold;
+}
+nav a {
+  padding: 10px 60px;
+  transition: background-color 0.3s ease;
+}
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.banner-main {
+  background-color: #dfffb1;
+  padding: 40px 20px 80px 20px;
+}
+
+.desc-main-div {
+  background-color: #067244;
+  padding: 80px 0;
+}
+.paras {
+  font-size: 30px;
+  color: white;
+  font-family: Nexa-bold;
+}
+.desc-three-main {
+  background-color: #dfffb1;
+  padding: 80px 0;
+}
+.pan-kerala {
+  font-size: 3rem;
+  font-family: NexaRustScriptB-4;
+  line-height: 3rem;
+  color: #067244;
+}
+.collection {
+  font-family: NexaRustSans-blackShadow;
+}
+.also-available {
+  color: #dfffb1;
+}
+.abroad-retail {
+  color: #067244;
+}
+.countries {
+  font-size: 36px;
+  font-family: Nexa-bold;
+}
+.video-thumb {
+  border-radius: 16px;
+}
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 110px;
+    right: 0;
+    background-color: #019158;
+    width: 100%;
+    z-index: 1;
+  }
+  nav a {
+    color: white;
+    padding: 20px 20px;
+  }
+  nav.active {
+    display: flex;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+  .paras {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .pan-kerala {
+    font-size: 1.5rem;
+    line-height: 1.4rem;;
+  }
+  .countries {
+    font-size: 16px;
+  }
+}
